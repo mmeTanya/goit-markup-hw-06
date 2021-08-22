@@ -301,7 +301,7 @@ address {
 .backdrop.is-hidden .modal {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(1.5);
 
 }
 
@@ -313,12 +313,11 @@ address {
   flex-direction: column;
   align-items: center;
 
-  min-height: 528px;
-  min-width: 581px;
+  min-height: 581px;
+  min-width: 528px;
   padding: 40px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0,2);
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0,14);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0,12);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 
   background-color: var(--white-color);
@@ -347,7 +346,7 @@ address {
   left: 50%;
   transform: translate(-50%, -50%);
   fill: var(--primary-title-text-color);
-  transition: color var(--transition-duration) var(--timing-function);
+  transition: fill var(--transition-duration) var(--timing-function);
 }
 
 .button-close:focus .icon-close{
@@ -408,7 +407,8 @@ address {
   transition: fill var(--transition-duration) var(--timing-function);
 }
 
-.input-info:focus + .icon-info{
+.input-info:hover + .icon-info,
+.input-info:focus + .icon-info {
   fill: var(--accent-color);
 }
 
@@ -734,7 +734,7 @@ address {
   border: 1px solid var(--third-border-color);
   border-radius: 4px;
 
-  transition: color var(--transition-duration) var(--timing-function), border var(--transition-duration) var(--timing-function);
+  transition: fill var(--transition-duration) var(--timing-function), border var(--transition-duration) var(--timing-function);
 }
 
 .clients-link:hover,
@@ -884,6 +884,7 @@ margin-left: 93px;
   border-radius: 4px;
   background-color: transparent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
 
   font-weight: 400;
   font-size: 14px;
@@ -1010,7 +1011,8 @@ margin-left: 93px;
   background-color: var(--second-overlay-color);
 
   transform: translateY(100%);
-  transition: transform var(--transition-duration) var(--timing-function);
+  opacity: 0;
+  transition: transform var(--transition-duration) var(--timing-function), opacity var(--transition-duration) var(--timing-function);
 
 }
 
@@ -1031,6 +1033,7 @@ margin-left: 93px;
 .project:hover .project-overlay ,
 .project:focus .project-overlay {
   transform: translateY(0);
+  opacity: 1;
 }
 
 
