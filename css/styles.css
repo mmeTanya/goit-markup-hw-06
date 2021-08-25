@@ -301,8 +301,7 @@ address {
 .backdrop.is-hidden .modal {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.5);
-
+  transform: translate(-50%, -50%) scale(0.5);
 }
 
 .modal {
@@ -319,10 +318,10 @@ address {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-
+  
   background-color: var(--white-color);
   transform: translate(-50%, -50%) scale(1);
-  transition: translate var(--transition-duration) var(--timing-function), scale var(--transition-duration) var(--timing-function);
+  transition: transform var(--transition-duration) var(--timing-function);
 }
 
 .button-close {
