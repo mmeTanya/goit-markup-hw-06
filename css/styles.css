@@ -395,6 +395,7 @@ address {
   padding-left: 42px;
   border: 1px solid var(--form-border-color);
   border-radius: 4px; 
+  outline: none;
   transition: border var(--transition-duration) var(--timing-function);
   
 }
@@ -418,6 +419,7 @@ address {
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
   margin-bottom: 20px;
+  outline: none;
   transition: border var(--transition-duration) var(--timing-function);
 }
 
