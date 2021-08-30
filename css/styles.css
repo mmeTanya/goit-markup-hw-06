@@ -375,6 +375,7 @@ address {
   line-height: 1.17;
   letter-spacing: 0.01em;
   
+  display: block;
   margin-bottom: 4px;
 }
 
@@ -437,10 +438,13 @@ address {
 } 
 
 .checkbox-field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 30px;
+}
+
+.label-agree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .checkbox {
@@ -474,8 +478,7 @@ address {
   background-origin: border-box;
 }
 
-
-.label-agree{
+.text-agree{
   color: var(--primary-text-color);
 
   font-size: 14px;
